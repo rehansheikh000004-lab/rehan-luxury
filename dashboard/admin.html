@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>REHAN Admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+  <div class="logo">
+    REHAN
+  </div>
+
+  <nav>
+
+    <a href="#">Dashboard</a>
+    <a href="#">Analytics</a>
+    <a href="#">Users</a>
+    <a href="#">Bookings</a>
+    <a href="index.html">Back</a>
+
+  </nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+  <!-- TOPBAR -->
+
+  <div class="topbar">
+
+    <h1>Luxury Admin Panel</h1>
+
+    <button class="admin-btn">
+      Admin
+    </button>
+
+  </div>
+
+  <!-- STATS -->
+
+  <section class="stats-grid">
+
+    <div class="stat-card">
+      <h2>12K</h2>
+      <p>Total Users</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>98%</h2>
+      <p>Performance</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>324</h2>
+      <p>Bookings</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>24/7</h2>
+      <p>System Active</p>
+    </div>
+
+  </section>
+
+  <!-- ANALYTICS -->
+
+  <section class="analytics">
+
+    <div class="chart-card">
+
+      <h3>System Analytics</h3>
+
+      <div class="bars">
+
+        <div class="bar" style="height: 90%"></div>
+        <div class="bar" style="height: 65%"></div>
+        <div class="bar" style="height: 80%"></div>
+        <div class="bar" style="height: 50%"></div>
+        <div class="bar" style="height: 95%"></div>
+        <div class="bar" style="height: 70%"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- USERS TABLE -->
+
+  <section class="users-section">
+
+    <h2>Recent Users</h2>
+
+    <div class="table-container">
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Rehan</td>
+            <td>rehan@email.com</td>
+            <td class="active">Active</td>
+          </tr>
+
+          <tr>
+            <td>Alex</td>
+            <td>alex@email.com</td>
+            <td class="active">Active</td>
+          </tr>
+
+          <tr>
+            <td>Daniel</td>
+            <td>daniel@email.com</td>
+            <td class="inactive">Inactive</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
