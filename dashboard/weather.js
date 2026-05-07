@@ -1,4 +1,4 @@
-const apiKey = "8c0b79b872103a18066e5573cb69710a";
+const apiKey = "138c9a46136b8599b9865364880d3a0d";
 
 /* GET WEATHER */
 
