@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>REHAN Weather</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+  <a href="index.html" class="back-btn">
+    ← Dashboard
+  </a>
+
+  <h1>Luxury Weather</h1>
+
+</header>
+
+<!-- WEATHER SECTION -->
+
+<section class="weather-container">
+
+  <div class="weather-box">
+
+    <h2>Weather System</h2>
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city..."
+      >
+
+      <button onclick="getWeather()">
+        Search
+      </button>
+
+    </div>
+
+    <div class="weather-result" id="weatherResult">
+
+      <h3 id="cityName">
+        Nagpur
+      </h3>
+
+      <h1 id="temperature">
+        --
+      </h1>
+
+      <p id="condition">
+        Search a city
+      </p>
+
+      <div class="details">
+
+        <div class="detail-card">
+          <p>Humidity</p>
+          <h4 id="humidity">
+            --
+          </h4>
+        </div>
+
+        <div class="detail-card">
+          <p>Wind</p>
+          <h4 id="wind">
+            --
+          </h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="weather.js"></script>
+</body>
+</html>
