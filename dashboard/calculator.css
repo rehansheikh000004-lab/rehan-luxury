@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background: #050505;
+  color: white;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+/* BACKGROUND */
+
+.bg-glow {
+  position: fixed;
+
+  width: 700px;
+  height: 700px;
+
+  background: radial-gradient(circle, rgba(59,130,246,0.2), transparent);
+
+  top: -250px;
+  right: -250px;
+
+  filter: blur(120px);
+
+  z-index: -1;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 8%;
+}
+
+.back-btn {
+  text-decoration: none;
+
+  color: #999;
+
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 38px;
+}
+
+/* CONTAINER */
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+/* CALCULATOR */
+
+.calculator {
+  width: 100%;
+  max-width: 420px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 30px;
+
+  backdrop-filter: blur(12px);
+}
+
+/* DISPLAY */
+
+#display {
+  width: 100%;
+
+  height: 90px;
+
+  margin-bottom: 25px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  color: white;
+
+  font-size: 38px;
+
+  padding: 20px;
+
+  text-align: right;
+
+  outline: none;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+button {
+  height: 75px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+
+  background: rgba(255,255,255,0.12);
+}
+
+/* SPECIAL */
+
+.special {
+  background: rgba(239,68,68,0.2);
+}
+
+.operator {
+  background: rgba(59,130,246,0.2);
+}
+
+.equal {
+  background: white;
+
+  color: black;
+
+  font-weight: 700;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .navbar h1 {
+    font-size: 28px;
+  }
+
+  #display {
+    font-size: 30px;
+  }
+
+  button {
+    height: 65px;
+  }
+
+}
