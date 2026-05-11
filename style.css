@@ -71,6 +71,61 @@ nav a:hover {
   color: white;
 }
 
+/* DASHBOARD BUTTON */
+
+.dashboard-link {
+  padding: 12px 22px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.3s !important;
+}
+
+.dashboard-link:hover {
+  background: white;
+
+  color: black !important;
+}
+
+/* CTA FIX */
+
+.cta {
+  display: inline-block;
+
+  margin-top: 40px;
+
+  padding: 18px 42px;
+
+  border-radius: 50px;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  text-decoration: none;
+
+  backdrop-filter: blur(12px);
+
+  font-size: 15px;
+
+  transition: 0.4s;
+}
+
+.cta:hover {
+  transform: translateY(-6px);
+
+  background: white;
+  color: black;
+}
+
 /* HERO */
 .hero {
   min-height: 100vh;
